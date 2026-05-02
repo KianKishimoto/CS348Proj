@@ -1,0 +1,196 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f4f4f4;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero,
+.panel,
+.status-bar {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero h1,
+.panel h2 {
+  margin: 0 0 8px;
+}
+
+.hero-copy,
+.eyebrow {
+  margin: 0;
+  color: #555;
+}
+
+.status-bar {
+  margin-top: 12px;
+}
+
+.error-text {
+  color: #b00020;
+  display: block;
+  margin-top: 6px;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.panel {
+  margin-bottom: 12px;
+}
+
+.panel-header {
+  margin-bottom: 12px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #bbb;
+  background: #eee;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-grid label,
+.checkbox-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+input,
+select {
+  border: 1px solid #999;
+  padding: 8px;
+  background: white;
+}
+
+.checkbox-fieldset {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.button-row,
+.action-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.ghost-button,
+.danger-button {
+  border: 1px solid #888;
+  background: #eee;
+  color: #222;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.danger-button {
+  color: #900;
+}
+
+.small {
+  padding: 6px 10px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.empty-cell {
+  text-align: center;
+  color: #666;
+}
+
+.secondary-cell {
+  margin-top: 4px;
+  color: #666;
+  font-size: 0.92rem;
+}
+
+.report-table-wrapper {
+  margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+  .layout-grid,
+  .form-grid,
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
