@@ -85,6 +85,7 @@ MYSQL_DB=cs348_stage2
 
 1. Install dependencies from `frontend/package.json`.
 2. Start the Vite development server from `frontend/`.
+3. Optionally set `VITE_API_BASE_URL` when deploying so the frontend can call a non-local backend.
 
 Example commands:
 
@@ -95,6 +96,12 @@ npm run dev
 ```
 
 The frontend will run at [http://localhost:5173](http://localhost:5173).
+
+Example production frontend environment variable:
+
+```env
+VITE_API_BASE_URL=https://your-backend-service.onrender.com/api
+```
 
 ## Demo Flow
 
